@@ -20,7 +20,9 @@ I wanted badly to flip North Carolina blue, win Kamala the election, and save de
 
 But I’d soon realize that the biggest challenge was not Trump supporters, indifferent students, or my own shyness — it was the lack of organization in our campus organizing program.
 
-<span class="drop-cap">T</span>he Democrats’ NC campus program has grown at a breakneck pace from a handful of organizers in August to more than 36 across the state today.
+***
+
+The Democrats’ NC campus program has grown at a breakneck pace from a handful of organizers in August to more than 36 across the state today.
 
 Theo Nollert, head of campus organizing at the NC Coordinated Campaign,  wanted him to hire 10 more UNC students, but Elijah Imlay, the full-time organizer at UNC, said “no, I need to manage the people I already have.”
 

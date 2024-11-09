@@ -1,14 +1,14 @@
 [
     {
-        "href": "#",
+        "href": "/news",
         "label": "News"
     },
     {
-        "href": "#",
+        "href": "/opinion",
         "label": "Opinion"
     },
     {
-        "href": "#",
+        "href": "/longform",
         "label": "Longform"
     },
     {

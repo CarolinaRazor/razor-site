@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Opinion - The Carolina Razor{% endblock title %}
+
+{% block content %}
+{% set all_stories = load_data(path="data/stories.json") %}
+{% set stories = all_stories | filter(attribute="format", value=page.title | lower) %}
+<div class="section-header">
+    <h1 class="section-title">{{ page.title }}</h1>
+    {% if page.extra.sectionDescription %}<h2 class="section-description">{{ page.extra.sectionDescription }}</h2>{% endif %}
+</div>
+
+<div class="container">
+    <div class="magazine-layout">
+        {% if stories | length > 0 %}
+        <div class="magazine-column">
+            {% for story in stories | slice(start=0, end=2) %}
+                {{ macros_article::article(story=story) }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if stories | length > 2 %}
+        <div class="magazine-column">
+            {% for story in stories | slice(start=2, end=3) %}
+                {{ macros_article::article(story=story) }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if stories | length > 3 %}
+        <div class="magazine-column">
+            {% for story in stories | slice(start=3, end=5) %}
+                {{ macros_article::article(story=story, size="small") }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if stories | length > 5 %}
+        <div class="magazine-column">
+            {% for story in stories | slice(start=5, end=7) %}
+                {{ macros_article::article(story=story, size="small") }}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

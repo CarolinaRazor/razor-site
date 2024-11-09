@@ -17,11 +17,12 @@
         <div class="header-container">
             <a href="/" class="site-title">
                 <h1>The Carolina Razor</h1>
+                <!-- {{current_path}} -->
             </a>
             <nav class="main-nav">
                 {% set nav_items = load_data(path="data/nav.json") %}
                 {% for item in nav_items %}
-                    <a href="{{ item.href }}" class="nav-item">{{ item.label }}</a>
+                    <a href="{{ item.href }}" class="nav-item {% if item.href == current_path | trim_end_matches(pat="/") %}nav-active{% endif %}">{{ item.label }}</a>
                 {% endfor %}
             </nav>
         </div>
